@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Frontend Mentor - Space tourism website solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![](./src/assets/screenshot/space.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+There are many topics i learnt in this project. The first is using the grid. i learnt to use the grid with its grid-template-columns and grid-template-rows and grid-template-areas. I learnt to apply them for the desktop, tablet and mobile mode. The second is that i got introduced to many css properties that i have never used before such as padding-inline, margin-block, inset, outline, aspect-ratio and many more. Thirdly, i learnt to to use the ref hook in react and applied it to make an autoplay slide. Also, i learnt that the ref hook can reference the dom element which acts like query selector.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To see how you can add code snippets, see below:
 
-## Learn More
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```css
+.grid-container--tech {
+  place-items: center;
+  grid-template-areas:
+    ". title title title"
+    ". tabs content image"
+    ". . . .";
+  grid-template-columns: minmax(2rem, 1fr) 4rem minmax(0, 40rem);
+  grid-template-rows: 20% 2fr;
+  padding-left: 0;
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```js
+const autoPlayRef = useRef();
+useEffect(() => {
+  autoPlayRef.current = nextSlide;
+});
+```
 
-### Code Splitting
+### Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I wish to apply the grid layout more efficiently by applying it to more of my projects. Also, i would like to learn more of the ref hook in react and apply it to many scenarios.
 
-### Analyzing the Bundle Size
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Example resource 1](https://www.youtube.com/watch?v=lRaL-8qZ0mM&t=6404s) - This helped me create the a css utility class and handle the different layouts in the project.
+- [Example resource 2](https://www.youtube.com/watch?v=t2ypzz6gJm0&list=LL&index=2&t=249s) - This helped me to simplify the ref hook.
+- [Example resource 3](https://www.youtube.com/watch?v=68O6eOGAGqA&t=307s) - This helped me to learn more about the grid system.
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Website - [Basma Tebe](https://basma94tebe.wixsite.com/my-site/projects)
+- Frontend Mentor - [@btebe](https://www.frontendmentor.io/profile/btebe)
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I would like to give my gratitude to Youtuber Kevin Powell for making a beginner friendly video of the solution for this project and sharing it on Youtube. I would also like to thank another Youtuber Web Dev Simplified for showing an easy to follow video explaining how a ref hook in react works.
