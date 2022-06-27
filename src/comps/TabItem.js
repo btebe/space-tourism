@@ -1,9 +1,6 @@
 import React from "react";
 
 function TabItem({ name, description, distance, travel }) {
-  // require("../assets/destination/image-moon.png");
-  // const pic = imgPng.split('/')[3];
-  // const picwp = imgWebp.split('/')[3];
   return (
     <article className='destination-info flow'>
       <h2 className='ff-serif fs-800 uppercase'> {name}</h2>
