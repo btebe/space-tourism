@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/btebe/space-tourism)
+- Live Site URL: [live site URL](https://relaxed-dragon-bc5969.netlify.app/)
 
 ## My process
 
